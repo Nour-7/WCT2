@@ -156,7 +156,6 @@ def change_seg(seg):
 
 
 def load_segment(image_path, image_size=None):
-    l = 1
     if not image_path:
         return np.asarray([])
     image = Image.open(image_path)
@@ -168,9 +167,6 @@ def load_segment(image_path, image_size=None):
     image = transform(image)
     if len(np.asarray(image).shape) == 3:
         image = change_seg(image)
-
-    Image.SAVE(image, 'img'+str(l)+'.png')
-    l += 1
     return np.asarray(image)
 
 
