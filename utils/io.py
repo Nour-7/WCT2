@@ -57,12 +57,12 @@ def change_seg(seg):
 
     #Our Custum Colors
     color_dict = {
-    (218, 100, 218): 3,      # purple
+    (82, 18, 128): 3,     # purple
     (205, 37, 37): 2,     # red
-    (62, 203, 203): 0,       # light_blue
-    (36, 36, 197): 1,   # blue
-    (100, 124, 124): 4,  # grey
-    (117, 178, 106): 5,  # green
+    (62, 203, 203): 0,    # light_blue
+    (36, 36, 197): 1,     # blue
+    (100, 124, 124): 4,   # grey
+    (117, 178, 106): 5,   # green
     }
 
     # Default Colors of Detectron2 
